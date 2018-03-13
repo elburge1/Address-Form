@@ -45,7 +45,7 @@ const ListTitle = (props) => {
             : <div onClick={() => props.toggle()}>{props.pageSize} &#x25BC;</div>
           }
         </div>
-        <div className="pages">{props.page} - {props.pageSize * props.page} of {props.contacts.length}</div>
+        <div className="pages">{(props.page === 1 ? props.page : (props.pageSize * (props.page - 1)) + 1)} - {props.pageSize * props.page} of {props.contacts.length}</div>
       </div>
       <div className="arrow left-arrow" onClick={() => props.prevPage()}>&lt;</div>
       <div className="arrow right-arrow" onClick={() => props.nextPage()}>&gt;</div>
