@@ -9,12 +9,12 @@ const sortOptions = [
 ]
 
 const pageItems = [
-  {value: 1, display: '1'},
   {value: 5, display: '5'},
   {value: 10, display: '10'},
-  {value: 15, display: '15'},
   {value: 25, display: '25'},
   {value: 50, display: '50'},
+  {value: 75, display: '75'},
+  {value: 100, display: '100'},
 ]
 
 const ListTitle = (props) => {
